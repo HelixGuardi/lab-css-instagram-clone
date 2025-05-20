@@ -1,8 +1,11 @@
-/*
-Colors to use:
-dark blue: #06365f
-light blue: #1c5380
-*/
+/* Colors to use: */
+:root{
+  --dark-blue: #06365f;
+  --light-blue: #1C5380;
+  --instagram-first-blue: #487093;
+  --instagram-second-blue: #567d9f;
+  --instagram-light-blue: #6d91af;
+}
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -12,4 +15,57 @@ body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
+}
+
+#blue-section{
+  width: 100dvw;
+  height: 40dvh;
+  background: linear-gradient(
+    to top,
+    var(--instagram-first-blue),
+    var(--instagram-second-blue)
+  );
+  position: absolute;
+  z-index: -1;
+}
+
+#white-section{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 55px;
+}
+
+.right-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#log-in-btn{
+  padding: 10px;
+  background: linear-gradient(
+    to top,
+    var(--instagram-first-blue),
+    var(--instagram-light-blue)
+  );
+  box-shadow: 0px 0px 1px #000;
 }
